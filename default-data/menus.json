@@ -1,0 +1,68 @@
+[
+    {
+        "menu_name": "Pages Menu",
+        "menu_slug": "pages-menu",
+        "items": [
+            {
+                "title": "Home",
+                "url": "https://celebrated-cat.localsite.io/",
+                "menu_order": 1,
+                "parent": "0",
+                "type": "post_type",
+                "object": "page",
+                "object_id": "9",
+                "classes": [
+                    ""
+                ],
+                "attr_title": "",
+                "target": "",
+                "description": ""
+            },
+            {
+                "title": "About me",
+                "url": "https://celebrated-cat.localsite.io/about-me/",
+                "menu_order": 2,
+                "parent": "0",
+                "type": "post_type",
+                "object": "page",
+                "object_id": "189",
+                "classes": [
+                    ""
+                ],
+                "attr_title": "",
+                "target": "",
+                "description": ""
+            },
+            {
+                "title": "Works",
+                "url": "https://celebrated-cat.localsite.io/works/",
+                "menu_order": 3,
+                "parent": "0",
+                "type": "post_type",
+                "object": "page",
+                "object_id": "119",
+                "classes": [
+                    ""
+                ],
+                "attr_title": "",
+                "target": "",
+                "description": ""
+            },
+            {
+                "title": "Services",
+                "url": "https://celebrated-cat.localsite.io/services/",
+                "menu_order": 4,
+                "parent": "0",
+                "type": "post_type",
+                "object": "page",
+                "object_id": "104",
+                "classes": [
+                    ""
+                ],
+                "attr_title": "",
+                "target": "",
+                "description": ""
+            }
+        ]
+    }
+]
