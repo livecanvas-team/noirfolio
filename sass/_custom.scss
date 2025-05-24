@@ -86,48 +86,66 @@ IMPORTANT NOTE REGARDING PATHS FOR REFERENCING ELEMENTS IN THE THEME FOLDER
  
 /* ============  WRITE YOUR PROJECT CODE BELOW ============ */
 
+/* Base paragraph styling: subtle letter spacing for improved readability */
+// _custom.scss
 
-p {
-	letter-spacing: .02em;
-}
 
+/* ============ TYPOGRAPHY ============ */
+
+/* Lead text variant: toned-down body color at 60% opacity */
 .lead {
-	color: rgba(var(--bs-body-color-rgb), .6)
+    color: rgba(var(--bs-body-color-rgb), 0.6);
 }
 
+/* ============ HEADER  ============ */
 
-/* Glassmorphism card effect */
+/* Glassmorphism card effect: translucent background, rounded corners, and blur */
 .lc_glass {
-	background-color: rgba(var(--bs-body-color-rgb), .14);
-	border-radius: 16px;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(30px);
-
+    background-color: rgba(var(--bs-body-color-rgb), 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
 }
 
-.mix-blend-mode {
-	mix-blend-mode: screen;
-}
 
+/* ============ SERVICES ============ */
+
+/* Rotate icon link within service buttons for dynamic visual cue */
 .services .btn {
-	--bs-icon-link-transform: rotate(45deg);
+    --bs-icon-link-transform: rotate(45deg);
 }
 
+/* ============ PORTFOLIO  ============ */
+
+/* Prepare “Read More” link for fade-in on hover */
 .works .works_readmore {
-	opacity: 0;
-	transition: opacity .3s;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
+/* Reveal “Read More” link when user hovers over work item */
 .works:hover .works_readmore {
-	opacity: 1;
-	transition: opacity .3s;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }
 
+
+/* ============ IMAGE EFFECT ============ */
+/* 
+ Mask overlay utility: creates gradient fade from all four edges 
+ using intersecting linear gradients for seamless content fade-out.
+ Applied  to  images in the theme, to create a subtle fade-out effect.
+*/
 .mask {
-	mask-image:
-		linear-gradient(to bottom, rgba(var(--bs-body-bg-rgb), 0) 0%, rgba(var(--bs-body-bg-rgb), 0.1) 5%, rgba(var(--bs-body-bg-rgb), 0.3) 10%, rgba(var(--bs-body-bg-rgb), 0.5) 20%, rgba(var(--bs-body-bg-rgb), 0.7) 30%, rgba(var(--bs-body-bg-rgb), 0.9) 40%, rgba(var(--bs-body-bg-rgb), 1) 50%, rgba(var(--bs-body-bg-rgb), 1) 100%),
-		linear-gradient(to top, rgba(var(--bs-body-bg-rgb), 0) 0%, rgba(var(--bs-body-bg-rgb), 0.1) 5%, rgba(var(--bs-body-bg-rgb), 0.3) 10%, rgba(var(--bs-body-bg-rgb), 0.5) 20%, rgba(var(--bs-body-bg-rgb), 0.7) 30%, rgba(var(--bs-body-bg-rgb), 0.9) 40%, rgba(var(--bs-body-bg-rgb), 1) 50%, rgba(var(--bs-body-bg-rgb), 1) 100%),
-		linear-gradient(to left, rgba(var(--bs-body-bg-rgb), 0) 0%, rgba(var(--bs-body-bg-rgb), 0.1) 5%, rgba(var(--bs-body-bg-rgb), 0.3) 10%, rgba(var(--bs-body-bg-rgb), 0.5) 20%, rgba(var(--bs-body-bg-rgb), 0.7) 30%, rgba(var(--bs-body-bg-rgb), 0.9) 40%, rgba(var(--bs-body-bg-rgb), 1) 50%, rgba(var(--bs-body-bg-rgb), 1) 100%),
-		linear-gradient(to right, rgba(var(--bs-body-bg-rgb), 0) 0%, rgba(var(--bs-body-bg-rgb), 0.1) 5%, rgba(var(--bs-body-bg-rgb), 0.3) 10%, rgba(var(--bs-body-bg-rgb), 0.5) 20%, rgba(var(--bs-body-bg-rgb), 0.7) 30%, rgba(var(--bs-body-bg-rgb), 0.9) 40%, rgba(var(--bs-body-bg-rgb), 1) 50%, rgba(var(--bs-body-bg-rgb), 1) 100%);
-	mask-composite: intersect;
+    mask-image:
+        linear-gradient(to bottom, rgba(var(--bs-body-bg-rgb), 0) 0%, rgba(var(--bs-body-bg-rgb), 0.1) 5%, rgba(var(--bs-body-bg-rgb), 0.3) 10%, rgba(var(--bs-body-bg-rgb), 0.5) 20%, rgba(var(--bs-body-bg-rgb), 0.7) 30%, rgba(var(--bs-body-bg-rgb), 0.9) 40%, rgba(var(--bs-body-bg-rgb), 1) 50%, rgba(var(--bs-body-bg-rgb), 1) 100%),
+        linear-gradient(to top,    rgba(var(--bs-body-bg-rgb), 0) 0%, rgba(var(--bs-body-bg-rgb), 0.1) 5%, rgba(var(--bs-body-bg-rgb), 0.3) 10%, rgba(var(--bs-body-bg-rgb), 0.5) 20%, rgba(var(--bs-body-bg-rgb), 0.7) 30%, rgba(var(--bs-body-bg-rgb), 0.9) 40%, rgba(var(--bs-body-bg-rgb), 1) 50%, rgba(var(--bs-body-bg-rgb), 1) 100%),
+        linear-gradient(to left,   rgba(var(--bs-body-bg-rgb), 0) 0%, rgba(var(--bs-body-bg-rgb), 0.1) 5%, rgba(var(--bs-body-bg-rgb), 0.3) 10%, rgba(var(--bs-body-bg-rgb), 0.5) 20%, rgba(var(--bs-body-bg-rgb), 0.7) 30%, rgba(var(--bs-body-bg-rgb), 0.9) 40%, rgba(var(--bs-body-bg-rgb), 1) 50%, rgba(var(--bs-body-bg-rgb), 1) 100%),
+        linear-gradient(to right,  rgba(var(--bs-body-bg-rgb), 0) 0%, rgba(var(--bs-body-bg-rgb), 0.1) 5%, rgba(var(--bs-body-bg-rgb), 0.3) 10%, rgba(var(--bs-body-bg-rgb), 0.5) 20%, rgba(var(--bs-body-bg-rgb), 0.7) 30%, rgba(var(--bs-body-bg-rgb), 0.9) 40%, rgba(var(--bs-body-bg-rgb), 1) 50%, rgba(var(--bs-body-bg-rgb), 1) 100%);
+    mask-composite: intersect;
+}
+
+/* Apply screen blend mode for creative overlay effects */
+.mix-blend-mode {
+    mix-blend-mode: screen;
 }
