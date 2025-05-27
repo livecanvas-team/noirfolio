@@ -351,102 +351,102 @@
 	<div class="container timeline position-relative py-6">
 
 		<style>
-.timeline:before {
-	content: "";
-	background: rgba(var(--bs-primary-rgb), .4);
-	width: 1px;
-	height: 95%;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.timeline-item .timeline-content {
-	padding: 40px 30px 10px 30px;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-	float: right;
-}
-
-.timeline-item:nth-child(even) .timeline-content::after {
-	content: "";
-	position: absolute;
-	border-style: solid;
-	width: 0;
-	height: 0;
-	top: 30px;
-	left: -15px;
-	border-width: 10px 15px 10px 0;
-	border-color: transparent rgba(var(--bs-primary-rgb), .4);
-	transparent transparent;
-}
-
-.timeline-item::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-.timeline-content {
-	position: relative;
-	width: 45%;
-}
-
-.timeline-content::after {
-	content: "";
-	position: absolute;
-	border-style: solid;
-	width: 0;
-	height: 0;
-	top: 30px;
-	right: -15px;
-	border-width: 10px 0 10px 15px;
-	border-color: transparent transparent transparent rgba(var(--bs-primary-rgb), .4);
-}
-
-.timeline-img {
-	width: 32px;
-	height: 32px;
-	border-radius: 50%;
-	position: absolute;
-	left: 50%;
-}
-
-@media screen and (max-width: 768px) {
-	.timeline::before {
-		left: 25px;
-	}
-
-	.timeline .timeline-img {
-		left: 25px;
-	}
-
-	.timeline .timeline-content {
-		max-width: 100%;
-		width: auto;
-		margin-left: 55px;
-	}
-
-	.timeline .timeline-item:nth-child(even) .timeline-content {
-		float: none;
-	}
-
-	.timeline .timeline-item:nth-child(odd) .timeline-content::after {
-		content: "";
-		position: absolute;
-		border-style: solid;
-		width: 0;
-		height: 0;
-		top: 30px;
-		left: -15px;
-		border-width: 10px 15px 10px 0;
-		border-color: transparent rgba(var(--bs-primary-rgb), .4) transparent transparent;
-	}
-}
+			.timeline:before {
+				content: "";
+				background: rgba(var(--bs-primary-rgb), .4);
+				width: 1px;
+				height: 95%;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			
+			.timeline-item .timeline-content {
+				padding: 40px 30px 10px 30px;
+			}
+			
+			.timeline-item:nth-child(even) .timeline-content {
+				float: right;
+			}
+			
+			.timeline-item:nth-child(even) .timeline-content::after {
+				content: "";
+				position: absolute;
+				border-style: solid;
+				width: 0;
+				height: 0;
+				top: 30px;
+				left: -15px;
+				border-width: 10px 15px 10px 0;
+				border-color: transparent rgba(var(--bs-primary-rgb), .4);
+				transparent transparent;
+			}
+			
+			.timeline-item::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			.timeline-content {
+				position: relative;
+				width: 45%;
+			}
+			
+			.timeline-content::after {
+				content: "";
+				position: absolute;
+				border-style: solid;
+				width: 0;
+				height: 0;
+				top: 30px;
+				right: -15px;
+				border-width: 10px 0 10px 15px;
+				border-color: transparent transparent transparent rgba(var(--bs-primary-rgb), .4);
+			}
+			
+			.timeline-img {
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				position: absolute;
+				left: 50%;
+			}
+			
+			@media screen and (max-width: 768px) {
+				.timeline::before {
+					left: 25px;
+				}
+			
+				.timeline .timeline-img {
+					left: 25px;
+				}
+			
+				.timeline .timeline-content {
+					max-width: 100%;
+					width: auto;
+					margin-left: 55px;
+				}
+			
+				.timeline .timeline-item:nth-child(even) .timeline-content {
+					float: none;
+				}
+			
+				.timeline .timeline-item:nth-child(odd) .timeline-content::after {
+					content: "";
+					position: absolute;
+					border-style: solid;
+					width: 0;
+					height: 0;
+					top: 30px;
+					left: -15px;
+					border-width: 10px 15px 10px 0;
+					border-color: transparent rgba(var(--bs-primary-rgb), .4) transparent transparent;
+				}
+			}
 		</style>
 
-		<div style="left: 25px;" class="position-absolute translate-middle-md top-0 start-0 start-md-50 border border-primary border-opacity-10 lc-block">
+		<div class="position-absolute translate-middle-md top-0 start-0 start-md-50 border border-primary border-opacity-10 lc-block">
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="rounded-circle p-1" width="3em" height="3em" viewBox="0 0 24 24" lc-helper="svg-icon" fill="currentColor">
 				<path d="M12,8A3,3 0 0,0 15,5A3,3 0 0,0 12,2A3,3 0 0,0 9,5A3,3 0 0,0 12,8M12,11.54C9.64,9.35 6.5,8 3,8V19C6.5,19 9.64,20.35 12,22.54C14.36,20.35 17.5,19 21,19V8C17.5,8 14.36,9.35 12,11.54Z"></path>
 			</svg>
